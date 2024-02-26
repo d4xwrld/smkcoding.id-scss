@@ -99,23 +99,28 @@ main {
   justify-content: center;
   margin: 0.5rem;
 }
-.row .product-card .product-rating {
+.row .product-card .product-rating-wrapper {
   position: absolute;
   display: flex;
   margin-top: 1rem;
   align-items: center;
-  background-color: #fff;
-  padding: 0.25em 0.5em;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0.28em 0.45em;
   margin-left: 1.25em;
   border-radius: 16px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
-.row .product-card .product-rating span {
+.row .product-card .product-rating-wrapper .product-rating {
+  border-radius: 13px;
+  background-color: #fff;
+  padding: 0.25em 0.46em;
+}
+.row .product-card .product-rating-wrapper .product-rating span {
   font-size: 1.2rem;
   font-weight: bold;
   margin-right: 4px;
 }
-.row .product-card .star-icon {
+.row .product-card .product-rating-wrapper .star-icon {
   height: 1em;
 }
 .row .product-card .product-details {
