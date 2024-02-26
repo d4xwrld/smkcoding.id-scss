@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hanado</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="./assets/Icons/favicon.ico" />
+    <style>
+      .underline {
+        text-decoration: underline;
+        text-decoration-color: orangered; /* custom color */
+        text-underline-position: under;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section class="about-us">
+        <div class="about-us-content-left">
+          <div class="card">
+            <img src="./assets/Images/highlight-product.png" alt="" />
+          </div>
+        </div>
+        <div class="about-us-content-right">
+          <h1>About Us</h1>
+          <h3>We provide quality coffee, and're ready to deliver.</h3>
+
+          <p>
+            We are a company that makes and distributes delicious drinks. Our
+            main product is made with a secret recipe and available in stores
+            worldwide.
+          </p>
+          <div>
+            <button class="order-button">
+              <span>Get your coffee</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="row">
+      <div class="product-card">
+        <img
+          class="product-image rounded"
+          src="./assets/Images/product-1.png"
+          alt="Vanilla Latte"
+        />
+        <div class="product-rating">
+          <span>4.8</span>
+          <img
+            class="star-icon"
+            src="./assets/Icons/gold-star.svg"
+            alt="Star rating"
+          />
+        </div>
+        <div class="product-details">
+          <h5 class="product-title">Vanilla Latte</h5>
+          <div class="product-price">21k</div>
+          <div class="product-options">
+            <input
+              id="hot-vanilla-latte"
+              type="radio"
+              name="vanilla-latte"
+              checked
+            />
+            <label for="hot-vanilla-latte">Hot</label>
+
+            <input id="cold-vanilla-latte" type="radio" name="vanilla-latte" />
+            <label for="cold-vanilla-latte">Cold</label>
+          </div>
+          <button class="product-button">
+            <i class="ai-cart"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="footer">
+      <p>made by M. Reyhan Fadillah with ♡</p>
+      <a href="https://github.com/d4xwrld/caffe-street"
+        ><p class="fw-bold">repositories</p></a
+      >
+    </div> -->
+    <script src="https://unpkg.com/akar-icons-fonts"></script>
+  </body>
+</html>
