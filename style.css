@@ -1,3 +1,7 @@
+:root::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   font-family: Inter;
 }
@@ -25,8 +29,7 @@ main {
 }
 .about-us .about-us-content-left .card img {
   width: 15rem;
-  top: -10rem;
-  margin: -5rem 0 0 0;
+  margin: -8rem 0 0 0;
   border: #fff solid;
   border-radius: 1em;
 }
@@ -51,6 +54,7 @@ main {
   justify-content: center;
   align-items: center;
   font-size: 12px;
+  font-weight: bold;
   gap: 8px;
   padding: 0.5em 1em;
   border-radius: 40px;
@@ -61,8 +65,12 @@ main {
   color: sandybrown;
 }
 
+.title {
+  margin: 3em 0 0 5em;
+}
+
 .row {
-  padding: 2em;
+  padding: 1em;
   display: flex;
   justify-content: center;
 }
@@ -97,9 +105,10 @@ main {
   margin-top: 1rem;
   align-items: center;
   background-color: #fff;
-  padding: 2px 6px;
+  padding: 0.25em 0.5em;
   margin-left: 1.25em;
   border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 .row .product-card .product-rating span {
   font-size: 1.2rem;
@@ -107,7 +116,7 @@ main {
   margin-right: 4px;
 }
 .row .product-card .star-icon {
-  height: 1rem;
+  height: 1em;
 }
 .row .product-card .product-details {
   padding: 1em;
@@ -120,7 +129,6 @@ main {
   margin-bottom: -1em;
 }
 .row .product-card .product-title h5 {
-  max-width: 5em;
   font-size: 0.87em;
   font-weight: bold;
   margin-block-start: 1.67em;
@@ -128,21 +136,27 @@ main {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
+.row .product-card .product-title p {
+  font-weight: bold;
+}
 .row .product-card .product-desc {
   display: flex;
   margin: 0.75em;
   justify-content: space-between;
 }
 .row .product-card .product-desc p {
-  width: 15vw;
+  font-size: 0.8em;
+  margin-block-start: 1.67em;
+  margin-block-end: 1.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 .row .product-card .product-button {
   width: 40px;
   height: 40px;
-  background-color: #ffb300;
+  background-color: sandybrown;
   border-radius: 20px;
   color: #fff;
-  cursor: pointer;
 }
 .row .product-card .product-button i {
   font-size: 1.2rem;
