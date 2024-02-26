@@ -7,6 +7,9 @@ $secondColor: burlywood;
   justify-content: center;
   align-items: center;
 }
+:root::-webkit-scrollbar {
+  display: none;
+}
 body {
   font-family: Inter;
 }
@@ -31,8 +34,7 @@ main {
     .card {
       img {
         width: 15rem;
-        top: -10rem;
-        margin: -5rem 0 0 0;
+        margin: -8rem 0 0 0;
         border: #fff solid;
         border-radius: 1em;
       }
@@ -58,6 +60,7 @@ main {
     .order-button {
       @include flex-box();
       font-size: 12px;
+      font-weight: bold;
       gap: 8px;
       padding: 0.5em 1em;
       border-radius: ($baseSize * 10);
@@ -71,8 +74,11 @@ main {
   }
 }
 
+.title {
+  margin: 3em 0 0 5em;
+}
 .row {
-  padding: 2em;
+  padding: 1em;
   display: flex;
   justify-content: center;
 
@@ -105,9 +111,10 @@ main {
       margin-top: 1rem;
       align-items: center;
       background-color: #fff;
-      padding: 2px 6px;
+      padding: 0.25em 0.5em;
       margin-left: 1.25em;
       border-radius: 16px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
     }
 
     .product-rating span {
@@ -117,7 +124,7 @@ main {
     }
 
     .star-icon {
-      height: 1rem;
+      height: 1em;
     }
 
     .product-details {
@@ -132,13 +139,15 @@ main {
       margin-bottom: -1em;
 
       h5 {
-        max-width: 5em;
         font-size: 0.87em;
         font-weight: bold;
         margin-block-start: 1.67em;
         margin-block-end: 1.67em;
         margin-inline-start: 0px;
         margin-inline-end: 0px;
+      }
+      p {
+        font-weight: bold;
       }
     }
 
@@ -148,17 +157,20 @@ main {
       justify-content: space-between;
 
       p {
-        width: 15vw;
+        font-size: 0.8em;
+        margin-block-start: 1.67em;
+        margin-block-end: 1.67em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
       }
     }
 
     .product-button {
       width: 40px;
       height: 40px;
-      background-color: #ffb300;
+      background-color: $myColor;
       border-radius: 20px;
       color: #fff;
-      cursor: pointer;
     }
 
     .product-button i {
