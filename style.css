@@ -157,14 +157,18 @@ main {
   margin-inline-end: 0px;
 }
 .row .product-card .product-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 40px;
   height: 40px;
   background-color: sandybrown;
   border-radius: 20px;
   color: #fff;
 }
-.row .product-card .product-button i {
-  font-size: 1.2rem;
+.row .product-card .product-button img {
+  width: 1.5em;
+  height: 1.5em;
 }
 
 .footer {
